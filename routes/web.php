@@ -14,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    // $data = [
+    //     'comics' => config('db.comics')
+    // ];
+    // dd(config('db.comics'));
     return view('navbar_elements.comics');
 })->name('navbar_elements.comics');
 
