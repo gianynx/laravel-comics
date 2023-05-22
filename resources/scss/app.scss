@@ -9,8 +9,16 @@ $fa-font-path: "../fonts/webfonts" !default;
 
 @import '~bootstrap/scss/bootstrap';
 
+// header
 header {
     a.active {
         border-bottom: 3px solid $active_color;
     }
+}
+
+// jumbotron
+#jumbotron {
+    background-image: url('img/jumbotron.jpg');
+    height: 20rem;
+    background-size: cover;
 }
