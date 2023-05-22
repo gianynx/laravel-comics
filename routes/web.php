@@ -21,6 +21,12 @@ Route::get('/', function () {
     return view('navbar_elements.comics', $data);
 })->name('navbar_elements.comics');
 
+Route::get('/comics/{id}', function ($id) {
+    $comics = config('db.comics');
+    $comic = $comics[$id];
+    return view('comics.show', compact('comic'));
+})->name('comics.show');
+
 Route::get('/characters', function () {
     return view('navbar_elements.characters');
 })->name('navbar_elements.characters');

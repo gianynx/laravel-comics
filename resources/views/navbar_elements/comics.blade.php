@@ -12,12 +12,13 @@
                     <div class="card">
                         <div class="card-body">
                             <div class="card-image h-100">
-                                <a href="#"><img class="img-fluid h-100" src="{{ $comic['thumb'] }}"
-                                        alt="{{ $comic['title'] }}">
+                                <a href="{{ route('comics.show', ['id' => $loop->index]) }}"><img class="img-fluid h-100"
+                                        src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
                                 </a>
                             </div>
                             <div class="card-title text-uppercase fw-bold small text-white pt-3">
-                                <a href="#" class="text-decoration-none text-white">{{ $comic['series'] }}</a>
+                                <a href="{{ route('comics.show', ['id' => $loop->index]) }}"
+                                    class="text-decoration-none text-white">{{ $comic['series'] }}</a>
                             </div>
                         </div>
                     </div>

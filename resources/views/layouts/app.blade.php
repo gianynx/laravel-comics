@@ -15,12 +15,16 @@
 </head>
 
 <body>
-    @include('partials.header')
-    @include('partials.jumbotron')
+    <header>
+        @include('partials.header')
+    </header>
     <main>
+        <div id="jumbotron">
+            @include('partials.jumbotron')
+        </div>
         @yield('content')
     </main>
-
+    <footer></footer>
 </body>
 
 </html>

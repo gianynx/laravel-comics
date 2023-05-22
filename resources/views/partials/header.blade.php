@@ -1,7 +1,7 @@
 <header>
     <div class="container pt-3 d-flex justify-content-between">
         <div id="img_container">
-            <a href="{{ route('navbar_elements.comics') }}"><img src="img/dc-logo.png" alt="dc-logo"></a>
+            <a href="{{ route('navbar_elements.comics') }}"><img src="img/dc-logo.png" alt="dc_logo"></a>
         </div>
         <div id="navbar_container">
             <nav class="navbar-nav">
