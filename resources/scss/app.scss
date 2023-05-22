@@ -8,3 +8,9 @@ $fa-font-path: "../fonts/webfonts" !default;
 @import "~@fortawesome/fontawesome-free/scss/brands";
 
 @import '~bootstrap/scss/bootstrap';
+
+header {
+    a.active {
+        border-bottom: 3px solid $active_color;
+    }
+}
