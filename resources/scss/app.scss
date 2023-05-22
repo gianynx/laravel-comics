@@ -22,3 +22,14 @@ header {
     height: 20rem;
     background-size: cover;
 }
+
+// main
+main {
+    background-color: $main_bg;
+}
+
+.card {
+    height: 30rem;
+    border-style: none;
+    background-color: $main_bg;
+}
