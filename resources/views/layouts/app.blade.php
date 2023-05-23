@@ -19,9 +19,7 @@
         @include('partials.header')
     </header>
     <main>
-        <div id="jumbotron">
-            @include('partials.jumbotron')
-        </div>
+        @include('partials.jumbotron')
         @yield('content')
     </main>
     <footer></footer>

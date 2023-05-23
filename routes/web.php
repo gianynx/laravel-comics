@@ -23,8 +23,12 @@ Route::get('/', function () {
 
 Route::get('/comics/{id}', function ($id) {
     $comics = config('db.comics');
-    $comic = $comics[$id];
-    return view('comics.show', compact('comic'));
+    if ($id >= 0 && $id < count($comics)) {
+        $comic = $comics[$id];
+        return view('comics.show', compact('comic'));
+    } else {
+        abort('Not Found!');
+    }
 })->name('comics.show');
 
 Route::get('/characters', function () {

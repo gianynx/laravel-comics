@@ -1,5 +1,11 @@
 @extends('layouts.app');
 
+@section('page_title')
+    Characters
+@endsection
+
 @section('content')
-    <h1>{{ $comic['title'] }}</h1>
+    <div class="bg-light">
+        <h1>{{ $comic['title'] }}</h1>
+    </div>
 @endsection
