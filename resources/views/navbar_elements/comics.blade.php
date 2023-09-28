@@ -10,8 +10,9 @@
             @foreach ($comics as $comic)
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4 mb-4">
                     <div class="card">
-                        <div class="card-body">
-                            <div class="card-image h-100">
+                        <div class="card-body w-100 h-100">
+                            <div class="card-image w-100 h-100">
+                                {{-- $loop è una variabile automatica fornita da Laravel all'interno di un ciclo di Blade. Questa variabile contiene informazioni sul ciclo corrente, come l'indice corrente, il numero totale di iterazioni e altro ancora. --}}
                                 <a href="{{ route('comics.show', ['id' => $loop->index]) }}"><img class="img-fluid h-100"
                                         src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
                                 </a>

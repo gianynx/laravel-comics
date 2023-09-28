@@ -7,6 +7,7 @@
             <nav class="navbar-nav">
                 <ul class="d-flex list-unstyled pt-5">
                     <li class="nav-item">
+                        {{-- currentRouteName() viene utilizzato per ottenere il nome della route corrente. In questo caso viene utilizzato all'interno di una struttura di controllo per determinare quale elemento di navigazione (o link) dovrebbe avere la classe active aggiunta, indicando quale pagina è attualmente visualizzata. --}}
                         <a class="nav-link px-3 text-decoration-none text-uppercase fw-bold small text-dark
                         {{ Route::currentRouteName() == 'navbar_elements.characters' ? 'active' : '' }}"
                             href="{{ route('navbar_elements.characters') }}">
